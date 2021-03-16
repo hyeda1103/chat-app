@@ -6,6 +6,7 @@ body {
     line-height: 1.4;
     background: black;
     display: block;
+    padding: 15px 0;
 }
 
 img {
@@ -17,7 +18,7 @@ a {
 }
 
 .inner {
-    width: 1366px;
+    width: 1300px;
     margin: 0 auto;
     position: relative;
 }
@@ -33,11 +34,12 @@ header {
 header>.inner {
     display: flex;
     height: 140px;
+    background-image: url(../images/global-header.jpg)
 }
 
 header>.inner .logo {
     left: 0;
-    margin: 11px;
+    margin: auto 0;
     width: 110px;
 }
 
@@ -153,30 +155,18 @@ header>.inner .utilities .search .material-icons {
     z-index: 2;
 }
 
-header>.inner .sub-menu li a {
+header>.inner .nav .bottom .sub-menu li a {
     color: #fff;
 }
 
 header>.inner .nav .bottom {
     position: relative;
-    top: 19px;
+    top: 8px;
 }
 
 header>.inner .nav .bottom .sub-menu {
     display: flex;
     justify-content: center;
-}
-
-header>.inner .nav .bottom .sub-menu>li::before {
-    content: "";
-    width: 1px;
-    height: 100%;
-    background: #555555;
-    position: absolute;
-}
-
-header>.inner .nav .bottom .sub-menu>li:first-child::before {
-    display: none;
 }
 
 header>.inner .nav .bottom .sub-menu>li {}
@@ -186,8 +176,31 @@ header>.inner .nav .bottom .sub-menu>li a {
     padding: 10px 15px;
     background-color: #5d7fb9;
     color: #fff;
+    display: block;
 }
 
 header>.inner .nav .bottom .sub-menu>li a:hover {
     background-color: #061f4a;
+}
+
+header>.inner .nav .bottom .sub-menu>li::before {
+    content: "";
+    width: 1px;
+    top: 20%;
+    height: 60%;
+    background: #aeb0b5;
+    position: absolute;
+}
+
+header>.inner .nav .bottom .sub-menu>li:hover::before {
+    content: "";
+    width: 1px;
+    top: 0;
+    height: 100%;
+    background: #aeb0b5;
+    position: absolute;
+}
+
+header>.inner .nav .bottom .sub-menu>li:first-child::before {
+    display: none;
 }
