@@ -46,8 +46,8 @@
     <!-- 각 브라우저의 기본 스타일을 초기화 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <!-- 구글 폰트: main.css보다 먼저 불러올 수 있도록 한다 -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Google material Icon을 불러온다 -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./css/main.css" />
@@ -57,7 +57,258 @@
 <body>
     <!-- HEADER -->
     <header>
+        <div class="inner">
+            <!-- 메인 페이지 index.html로 이동 -->
+            <a href="/" class="logo">
+                <img src="./images/nasa-logo.svg" alt="NASA" />
+            </a>
+            <div class="nav">
+                <div class="top">
+                    <ul class="main-menu">
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle">
+                                Missions
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="/artemis">Artemis Program</a>
+                                </li>
+                                <li>
+                                    <a href="/exploration/commercial/crew/index.html">Commercial Crew</a>
+                                </li>
+                                <li>
+                                    <a href="/mission_pages/msl/index.html">Curiosity Mars Rover</a>
+                                </li>
+                                <li>
+                                    <a href="/mission_pages/hubble/main/index.html">Hubble Space Telescope</a>
+                                </li>
+                                <li>
+                                    <a href="/mission_pages/webb/main/index.html">James Webb Space Telescope</a>
+                                </li>
+                                <li>
+                                    <a href="/mission_pages/juno/main/index.html">Juno: Mission at Jupiter</a>
+                                </li>
+                                <li>
+                                    <a href="/mission_pages/station/main/index.html">International Space Station</a>
+                                </li>
+                                <li>
+                                    <a href="/mission_pages/insight/main/index.html">InSight Mars Lander</a>
+                                </li>
+                                <li>
+                                    <a href="/perseverance">Perseverance Mars Rover</a>
+                                </li>
+                                <li>
+                                    <a href="/mission_pages/newhorizons/main/index.html">New Horizons: Pluto and
+                                        Beyond</a>
+                                </li>
+                                <li>
+                                    <a href="/osiris-rex">OSIRIS-REx Asteroid Mission</a>
+                                </li>
+                                <li>
+                                    <a href="/content/goddard/parker-solar-probe">Parker Solar Probe</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="/launchschedule">Launches and Landings</a>
+                                </li>
+                                <li>
+                                    <a href="/missions/">All Missions A-Z</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle">
+                                Galleries
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="/multimedia/imagegallery/iotd.html">Image of the Day</a>
+                                </li>
+                                <li>
+                                    <a href="/multimedia/imagegallery/index.html">Image Galleries</a>
+                                </li>
+                                <li>
+                                    <a href="/content/ultra-high-definition-video-gallery/index.html">Ultra High-Def
+                                        Videos</a>
+                                </li>
+                                <li>
+                                    <a href="/audience/formedia/features/MP_Photo_Guidelines.html">Usage and
+                                        Copyright</a>
+                                </li>
+                                <li>
+                                    <a href="/multimedia/videogallery/index.html">Videos</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle">
+                                NASA TV
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle">
+                                Follow NASA
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="/solve">Get Involved</a>
+                                </li>
+                                <li>
+                                    <a href="https://blogs.nasa.gov">NASA Blogs</a>
+                                </li>
+                                <li>
+                                    <a href="/nasalive">NASA Live</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.nasa.gov/specials/newsletter-sign-up/">NASA Newsletter</a>
+                                </li>
+                                <li>
+                                    <a href="/connect/social/index.html">NASA Socials</a>
+                                </li>
+                                <li>
+                                    <a href="/socialmedia">Social Media</a>
+                                </li>
+                                <li>
+                                    <a href="https://spotthestation.nasa.gov/">Spot the Station</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle">
+                                Downloads
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="/connect/apps.html">Apps</a>
+                                </li>
+                                <li>
+                                    <a href="/connect/sounds/index.html">Audio &amp; Ringtones</a>
+                                </li>
+                                <li>
+                                    <a href="/connect/ebooks/index.html">E-Books</a>
+                                </li>
+                                <li>
+                                    <a href="/podcasts">Podcasts</a>
+                                </li>
+                                <li>
+                                    <a href="/feature/third-rock-radio">Third Rock Radio</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle">
+                                About
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="/about/index.html">About NASA</a>
+                                </li>
+                                <li>
+                                    <a href="/astronauts">Astronauts</a>
+                                </li>
+                                <li>
+                                    <a href="/about/career/index.html">Careers@NASA</a>
+                                </li>
+                                <li>
+                                    <a href="/about/exhibits/index.html">Exhibits and Speakers</a>
+                                </li>
+                                <li>
+                                    <a href="/nasa-leadership">Leadership</a>
+                                </li>
+                                <li>
+                                    <a href="/about/sites/index.html">Locations</a>
+                                </li>
+                                <li>
+                                    <a href="/about/org_index.html">Organization</a>
+                                </li>
+                                <li>
+                                    <a href="/about/people">People of NASA</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle">
+                                NASA Audiences
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="/news/media/info/index.html">For Media</a>
+                                </li>
+                                <li>
+                                    <a href="/stem/foreducators">For Educators</a>
+                                </li>
+                                <li>
+                                    <a href="/stem/forstudents">For Students</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="utilities">
+                        <div class="search">
+                            <input type="text" placeholder="Search" />
+                            <div class="material-icons">search</div>
+                        </div>
+                        <div class="material-icons">share</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="">
+                                Humans in Space
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Moons to Mars
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Earth
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Space Tech
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Flight
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Solar System and Beyond
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                STEM Engagement
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                History
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Benefits to You
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
+    <section>
+
+    </section>
+    <footer>
+
+    </footer>
 </body>
 
 </html>

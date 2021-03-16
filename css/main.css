@@ -1,0 +1,193 @@
+/* COMMON */
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    background: black;
+    display: block;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.inner {
+    width: 1366px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* HEADER */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+header>.inner {
+    display: flex;
+    height: 140px;
+}
+
+header>.inner .logo {
+    left: 0;
+    margin: 11px;
+    width: 110px;
+}
+
+header>.inner .nav {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+header>.inner .nav .top {
+    z-index: 2;
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    height: 80px;
+}
+
+header>.inner .nav .top .main-menu {
+    color: #fff;
+}
+
+header>.inner .main-menu>li {
+    position: relative;
+    float: left;
+}
+
+header>.inner .main-menu>li::before {
+    content: "";
+    width: 2px;
+    height: 60%;
+    background: #555555;
+    position: absolute;
+    top: 20%;
+}
+
+header>.inner .main-menu>li:hover::before {
+    display: none;
+}
+
+header>.inner .main-menu>li:first-child::before {
+    display: none;
+}
+
+header>.inner .main-menu>li .dropdown-toggle {
+    color: #fff;
+    font-size: 20.58px;
+    padding: 29.575px 14px;
+    display: block;
+}
+
+header>.inner .main-menu>li:hover>a {
+    background-color: #0b3d91;
+}
+
+header>.inner .main-menu>li>ul {
+    position: fixed;
+}
+
+header>.inner .main-menu>li>ul a {
+    display: none;
+    width: 100%;
+    color: #fff;
+    background-color: #0b3d91;
+    font-size: 1.3em;
+    padding: 0.5em 1em;
+}
+
+header>.inner .main-menu>li:hover>ul a {
+    display: block;
+}
+
+header>.inner .main-menu>li>ul a:hover {
+    background-color: #061f4a;
+}
+
+header>.inner .utilities {
+    display: flex;
+    align-items: center;
+}
+
+header>.inner .utilities .material-icons {
+    color: #fff;
+    font-size: 24px;
+}
+
+header>.inner .utilities .search {
+    position: relative;
+    margin: auto 10px;
+}
+
+header>.inner .utilities .search input {
+    width: 156px;
+    height: 40px;
+    padding: 10px 36px 10px 10px;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 12px;
+}
+
+header>.inner .utilities .search .material-icons {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 5px;
+    margin: auto;
+    height: 24px;
+    color: #fff;
+    font-size: 24px;
+    z-index: 2;
+}
+
+header>.inner .sub-menu li a {
+    color: #fff;
+}
+
+header>.inner .nav .bottom {
+    position: relative;
+    top: 19px;
+}
+
+header>.inner .nav .bottom .sub-menu {
+    display: flex;
+    justify-content: center;
+}
+
+header>.inner .nav .bottom .sub-menu>li::before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #555555;
+    position: absolute;
+}
+
+header>.inner .nav .bottom .sub-menu>li:first-child::before {
+    display: none;
+}
+
+header>.inner .nav .bottom .sub-menu>li {}
+
+header>.inner .nav .bottom .sub-menu>li a {
+    font-size: 14px;
+    padding: 10px 15px;
+    background-color: #5d7fb9;
+    color: #fff;
+}
+
+header>.inner .nav .bottom .sub-menu>li a:hover {
+    background-color: #061f4a;
+}
