@@ -50,6 +50,8 @@ header>.inner .nav {
     width: 100%;
 }
 
+/* HEADER MAINMENU */
+
 header>.inner .nav .top {
     z-index: 2;
     display: flex;
@@ -62,12 +64,12 @@ header>.inner .nav .top .main-menu {
     color: #fff;
 }
 
-header>.inner .main-menu>li {
+header>.inner .nav .top .main-menu>li {
     position: relative;
     float: left;
 }
 
-header>.inner .main-menu>li::before {
+header>.inner .nav .top .main-menu>li::before {
     content: "";
     width: 2px;
     height: 60%;
@@ -76,30 +78,30 @@ header>.inner .main-menu>li::before {
     top: 20%;
 }
 
-header>.inner .main-menu>li:hover::before {
+header>.inner .nav .top .main-menu>li:hover::before {
     display: none;
 }
 
-header>.inner .main-menu>li:first-child::before {
+header>.inner .nav .top .main-menu>li:first-child::before {
     display: none;
 }
 
-header>.inner .main-menu>li .dropdown-toggle {
+header>.inner .nav .top .main-menu>li .dropdown-toggle {
     color: #fff;
     font-size: 20.58px;
     padding: 29.575px 14px;
     display: block;
 }
 
-header>.inner .main-menu>li:hover>a {
+header>.inner .nav .top .main-menu>li:hover>a {
     background-color: #0b3d91;
 }
 
-header>.inner .main-menu>li>ul {
+header>.inner .nav .top .main-menu>li>ul {
     position: fixed;
 }
 
-header>.inner .main-menu>li>ul a {
+header>.inner .nav .top .main-menu>li>ul a {
     display: none;
     width: 100%;
     color: #fff;
@@ -108,30 +110,30 @@ header>.inner .main-menu>li>ul a {
     padding: 0.5em 1em;
 }
 
-header>.inner .main-menu>li:hover>ul a {
+header>.inner .nav .top .main-menu>li:hover>ul a {
     display: block;
 }
 
-header>.inner .main-menu>li>ul a:hover {
+header>.inner .nav .top .main-menu>li>ul a:hover {
     background-color: #061f4a;
 }
 
-header>.inner .utilities {
+header>.inner .nav .top .utilities {
     display: flex;
     align-items: center;
 }
 
-header>.inner .utilities .material-icons {
+header>.inner .nav .top .utilities .material-icons {
     color: #fff;
     font-size: 24px;
 }
 
-header>.inner .utilities .search {
+header>.inner .nav .top .utilities .search {
     position: relative;
     margin: auto 10px;
 }
 
-header>.inner .utilities .search input {
+header>.inner .nav .top .utilities .search input {
     width: 156px;
     height: 40px;
     padding: 10px 36px 10px 10px;
@@ -143,7 +145,7 @@ header>.inner .utilities .search input {
     font-size: 12px;
 }
 
-header>.inner .utilities .search .material-icons {
+header>.inner .nav .top .utilities .search .material-icons {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -155,9 +157,7 @@ header>.inner .utilities .search .material-icons {
     z-index: 2;
 }
 
-header>.inner .nav .bottom .sub-menu li a {
-    color: #fff;
-}
+/* HEADER SUBMENU */
 
 header>.inner .nav .bottom {
     position: relative;
